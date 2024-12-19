@@ -1,0 +1,22 @@
+/**
+ * @license
+ *
+ * Font Family: Pencerio
+ * Designed by: Manushi Parikh
+ * URL: https://www.fontshare.com/fonts/pencerio
+ * © 2023 Indian Type Foundry
+ *
+ * Font Style:
+ * Pencerio Hairline
+ *
+*/
+
+@font-face {
+  font-family: "Madelyn";
+  src: url("../fonts/MadelynFill-Trial-Regular.woff") format("woff2"),
+    url("../fonts/Madelyn-Trial-Regular.woff2") format("woff"),
+    url("../fonts/Madelyn-Trial-Regular.woff") format("woff"),
+    url("../fonts/MadelynFill-Trial-Regular.woff2") format("woff2"),
+    url("../fonts/Madelyn-Trial-Regular.ttf") format("truetype"),
+    url("../fonts/MadelynFill-Trial-Regular.ttf") format("truetype");
+}

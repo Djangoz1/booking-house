@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap");
+@import "telma.css";
+@import "stardom.css";
+@import "new-title.css";
+@import "pencerio.css";
+@import "quicksand.css";
+@import "stylesheet.css";
+@import "bonny.css";
+@import "nippo.css";
+@import "madelyn.css";
+@import "../fonts/butler.css";
+@font-face {
+  font-family: "Madelyn";
+  /* src: url("/frontend/public/Satoshi_Complete/Fonts/WEB/css/satoshi.css") format("otf"); */
+}
+@font-face {
+  font-family: "Nippo";
+  /* src: url("/frontend/public/Satoshi_Complete/Fonts/WEB/css/satoshi.css") format("otf"); */
+}
+@font-face {
+  font-family: "Telma";
+  /* src: url("/frontend/public/Satoshi_Complete/Fonts/WEB/css/satoshi.css") format("otf"); */
+}
+@font-face {
+  font-family: "Pencerio";
+  /* src: url("/frontend/public/Satoshi_Complete/Fonts/WEB/css/satoshi.css") format("otf"); */
+}
+@font-face {
+  font-family: "NewTitle";
+  /* src: url("/frontend/public/Satoshi_Complete/Fonts/WEB/css/satoshi.css") format("otf"); */
+}
+@font-face {
+  font-family: "Quicksand";
+  /* src: url("/frontend/public/Satoshi_Complete/Fonts/WEB/css/satoshi.css") format("otf"); */
+}
+@font-face {
+  font-family: "Bonny";
+  /* src: url("/frontend/public/Satoshi_Complete/Fonts/WEB/css/satoshi.css") format("otf"); */
+}
+@font-face {
+  font-family: "Stardom";
+  /* src: url("/frontend/public/Satoshi_Complete/Fonts/WEB/css/satoshi.css") format("otf"); */
+}
+
+@font-face {
+  font-family: "Butler";
+}
+
+.border-color {
+  border-color: RGB(160, 147, 131);
+}
+.color2 {
+  color: RGB(160, 147, 131);
+}
+/* 
+.bg-sec {
+  background-color: RGB(85, 71, 64);
+} */
+
+.color1 {
+  color: RGB(254, 254, 254);
+}
+/* 
+.bg-light1 {
+  background-color: RGB(240, 241, 240);
+} */
+
+.text-shadow {
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.714);
+}
+
+.font1 {
+  font-family: "Pencerio-Hairline", "exo", sans-serif;
+}
+.font4 {
+  font-family: "Telma-Variable";
+}
+.font5 {
+  font-family: "Quicksand-Variable";
+}
+.font-text {
+  font-family: "casta";
+  /* font-family: "brolimo"; */
+}
+.font-prim {
+  /* font-family: "Stardom-Variable"; */
+  /* font-family: "Quicksand-Variable"; */
+  /* font-family: "Season"; */
+  /* font-family: "butler"; */
+  font-family: "brolimo";
+  /* font-family: "casta"; */
+  /* font-family: "Bonny-Variable", "exo", sans-serif; */
+  /* font-family: "Telma-Variable"; */
+  /* font-family: "Pencerio-Hairline", "exo", sans-serif; */
+  /* font-family: "Nippo-Variable"; */
+  /* font-family: "Madelyn", "exo", sans-serif; */
+}
+
+.font-sec {
+  /* font-family: "Pencerio-Hairline", "exo", sans-serif; */
+
+  /* font-family: "Bonny-Variable", "exo", sans-serif; */
+  /* font-family: "Madelyn", "exo", sans-serif; */
+  font-family: "royalwedding";
+  /* font-family: "Stardom-Variable"; */
+}
+
+.font7 {
+  font-family: "Nippo-Variable";
+}
+.font6 {
+  font-family: "Bonny-Variable";
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas:
+    "item1 item2 item2 item3"
+    "item1 ititle ititle item3"
+    "item1 ititle ititle item3"
+    "item5 ititle ititle item6"
+    "item5 ititle ititle item6"
+    "item7 ititle ititle item8"
+    "item7 item4 ititle4 item8";
+}
+
+.item1 {
+  grid-area: item1;
+}
+.ititle {
+  grid-area: ititle;
+}
+.item2 {
+  grid-area: item2;
+}
+.item3 {
+  grid-area: item3;
+}
+.item4 {
+  grid-area: item4;
+}
+.item5 {
+  grid-area: item5;
+}
+.item6 {
+  grid-area: item6;
+}
+.item7 {
+  grid-area: item7;
+}
+.item8 {
+  grid-area: item8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-areas:
+      "item1 item1 item2 item2"
+      "item3 item3 item4 item4"
+      "item5 item6 item7 item8";
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "item1 item2"
+      "item3 item4"
+      "item5 item6"
+      "item7 item8";
+  }
+}
+
+.font2 {
+  font-family: "Inter", sans-serif;
+}
+.font3 {
+  font-family: "NewTitle-Variable", sans-serif;
+}
+.debug {
+  border: 1px solid blue;
+}
+.debug > * {
+  border: 1px solid red;
+}
+
+.shadow1 {
+  box-shadow: 0px 1px 1px 2px rgba(0, 0, 0, 0.453);
+}
+
+.magicpattern {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 2000 1400%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cmask id=%22b%22 x=%220%22 y=%220%22 width=%222000%22 height=%221400%22%3E%3Cpath fill=%22url(%23a)%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3C%2Fmask%3E%3Cpath d=%22M0 0h2000v1400H0z%22%2F%3E%3Cg style=%22transform-origin:center center%22 stroke=%22%23222%22 stroke-width=%221.6%22 fill=%22none%22 mask=%22url(%23b)%22%3E%3Cpath d=%22M0 0h91v91H0zM91 0h91v91H91zM182 0h91v91h-91zM273 0h91v91h-91zM364 0h91v91h-91zM455 0h91v91h-91zM546 0h91v91h-91zM637 0h91v91h-91zM728 0h91v91h-91zM819 0h91v91h-91zM910 0h91v91h-91zM1001 0h91v91h-91zM1092 0h91v91h-91zM1183 0h91v91h-91zM1274 0h91v91h-91zM1365 0h91v91h-91zM1456 0h91v91h-91zM1547 0h91v91h-91zM1638 0h91v91h-91zM1729 0h91v91h-91zM1820 0h91v91h-91zM1911 0h91v91h-91zM0 91h91v91H0zM91 91h91v91H91zM182 91h91v91h-91zM273 91h91v91h-91zM364 91h91v91h-91zM455 91h91v91h-91zM546 91h91v91h-91zM637 91h91v91h-91zM728 91h91v91h-91zM819 91h91v91h-91zM910 91h91v91h-91zM1001 91h91v91h-91zM1092 91h91v91h-91zM1183 91h91v91h-91zM1274 91h91v91h-91zM1365 91h91v91h-91zM1456 91h91v91h-91zM1547 91h91v91h-91zM1638 91h91v91h-91zM1729 91h91v91h-91zM1820 91h91v91h-91zM1911 91h91v91h-91zM0 182h91v91H0zM91 182h91v91H91zM182 182h91v91h-91zM273 182h91v91h-91zM364 182h91v91h-91zM455 182h91v91h-91zM546 182h91v91h-91zM637 182h91v91h-91zM728 182h91v91h-91zM819 182h91v91h-91zM910 182h91v91h-91zM1001 182h91v91h-91zM1092 182h91v91h-91zM1183 182h91v91h-91zM1274 182h91v91h-91zM1365 182h91v91h-91zM1456 182h91v91h-91zM1547 182h91v91h-91zM1638 182h91v91h-91zM1729 182h91v91h-91zM1820 182h91v91h-91zM1911 182h91v91h-91zM0 273h91v91H0zM91 273h91v91H91zM182 273h91v91h-91zM273 273h91v91h-91zM364 273h91v91h-91zM455 273h91v91h-91zM546 273h91v91h-91zM637 273h91v91h-91zM728 273h91v91h-91zM819 273h91v91h-91zM910 273h91v91h-91zM1001 273h91v91h-91zM1092 273h91v91h-91zM1183 273h91v91h-91zM1274 273h91v91h-91zM1365 273h91v91h-91zM1456 273h91v91h-91zM1547 273h91v91h-91zM1638 273h91v91h-91zM1729 273h91v91h-91zM1820 273h91v91h-91zM1911 273h91v91h-91zM0 364h91v91H0zM91 364h91v91H91zM182 364h91v91h-91zM273 364h91v91h-91zM364 364h91v91h-91zM455 364h91v91h-91zM546 364h91v91h-91zM637 364h91v91h-91zM728 364h91v91h-91zM819 364h91v91h-91zM910 364h91v91h-91zM1001 364h91v91h-91zM1092 364h91v91h-91zM1183 364h91v91h-91zM1274 364h91v91h-91zM1365 364h91v91h-91zM1456 364h91v91h-91zM1547 364h91v91h-91zM1638 364h91v91h-91zM1729 364h91v91h-91zM1820 364h91v91h-91zM1911 364h91v91h-91zM0 455h91v91H0zM91 455h91v91H91zM182 455h91v91h-91zM273 455h91v91h-91zM364 455h91v91h-91zM455 455h91v91h-91zM546 455h91v91h-91zM637 455h91v91h-91zM728 455h91v91h-91zM819 455h91v91h-91zM910 455h91v91h-91zM1001 455h91v91h-91zM1092 455h91v91h-91zM1183 455h91v91h-91zM1274 455h91v91h-91zM1365 455h91v91h-91zM1456 455h91v91h-91zM1547 455h91v91h-91zM1638 455h91v91h-91zM1729 455h91v91h-91zM1820 455h91v91h-91zM1911 455h91v91h-91zM0 546h91v91H0zM91 546h91v91H91zM182 546h91v91h-91zM273 546h91v91h-91zM364 546h91v91h-91zM455 546h91v91h-91zM546 546h91v91h-91zM637 546h91v91h-91zM728 546h91v91h-91zM819 546h91v91h-91zM910 546h91v91h-91zM1001 546h91v91h-91zM1092 546h91v91h-91zM1183 546h91v91h-91zM1274 546h91v91h-91zM1365 546h91v91h-91zM1456 546h91v91h-91zM1547 546h91v91h-91zM1638 546h91v91h-91zM1729 546h91v91h-91zM1820 546h91v91h-91zM1911 546h91v91h-91zM0 637h91v91H0zM91 637h91v91H91zM182 637h91v91h-91zM273 637h91v91h-91zM364 637h91v91h-91zM455 637h91v91h-91zM546 637h91v91h-91zM637 637h91v91h-91zM728 637h91v91h-91zM819 637h91v91h-91zM910 637h91v91h-91zM1001 637h91v91h-91zM1092 637h91v91h-91zM1183 637h91v91h-91zM1274 637h91v91h-91zM1365 637h91v91h-91zM1456 637h91v91h-91zM1547 637h91v91h-91zM1638 637h91v91h-91zM1729 637h91v91h-91zM1820 637h91v91h-91zM1911 637h91v91h-91zM0 728h91v91H0zM91 728h91v91H91zM182 728h91v91h-91zM273 728h91v91h-91zM364 728h91v91h-91zM455 728h91v91h-91zM546 728h91v91h-91zM637 728h91v91h-91zM728 728h91v91h-91zM819 728h91v91h-91zM910 728h91v91h-91zM1001 728h91v91h-91zM1092 728h91v91h-91zM1183 728h91v91h-91zM1274 728h91v91h-91zM1365 728h91v91h-91zM1456 728h91v91h-91zM1547 728h91v91h-91zM1638 728h91v91h-91zM1729 728h91v91h-91zM1820 728h91v91h-91zM1911 728h91v91h-91zM0 819h91v91H0zM91 819h91v91H91zM182 819h91v91h-91zM273 819h91v91h-91zM364 819h91v91h-91zM455 819h91v91h-91zM546 819h91v91h-91zM637 819h91v91h-91zM728 819h91v91h-91zM819 819h91v91h-91zM910 819h91v91h-91zM1001 819h91v91h-91zM1092 819h91v91h-91zM1183 819h91v91h-91zM1274 819h91v91h-91zM1365 819h91v91h-91zM1456 819h91v91h-91zM1547 819h91v91h-91zM1638 819h91v91h-91zM1729 819h91v91h-91zM1820 819h91v91h-91zM1911 819h91v91h-91zM0 910h91v91H0zM91 910h91v91H91zM182 910h91v91h-91zM273 910h91v91h-91zM364 910h91v91h-91zM455 910h91v91h-91zM546 910h91v91h-91zM637 910h91v91h-91zM728 910h91v91h-91zM819 910h91v91h-91zM910 910h91v91h-91zM1001 910h91v91h-91zM1092 910h91v91h-91zM1183 910h91v91h-91zM1274 910h91v91h-91zM1365 910h91v91h-91zM1456 910h91v91h-91zM1547 910h91v91h-91zM1638 910h91v91h-91zM1729 910h91v91h-91zM1820 910h91v91h-91zM1911 910h91v91h-91zM0 1001h91v91H0zM91 1001h91v91H91zM182 1001h91v91h-91zM273 1001h91v91h-91zM364 1001h91v91h-91zM455 1001h91v91h-91zM546 1001h91v91h-91zM637 1001h91v91h-91zM728 1001h91v91h-91zM819 1001h91v91h-91zM910 1001h91v91h-91zM1001 1001h91v91h-91zM1092 1001h91v91h-91zM1183 1001h91v91h-91zM1274 1001h91v91h-91zM1365 1001h91v91h-91zM1456 1001h91v91h-91zM1547 1001h91v91h-91zM1638 1001h91v91h-91zM1729 1001h91v91h-91zM1820 1001h91v91h-91zM1911 1001h91v91h-91zM0 1092h91v91H0zM91 1092h91v91H91zM182 1092h91v91h-91zM273 1092h91v91h-91zM364 1092h91v91h-91zM455 1092h91v91h-91zM546 1092h91v91h-91zM637 1092h91v91h-91zM728 1092h91v91h-91zM819 1092h91v91h-91zM910 1092h91v91h-91zM1001 1092h91v91h-91zM1092 1092h91v91h-91zM1183 1092h91v91h-91zM1274 1092h91v91h-91zM1365 1092h91v91h-91zM1456 1092h91v91h-91zM1547 1092h91v91h-91zM1638 1092h91v91h-91zM1729 1092h91v91h-91zM1820 1092h91v91h-91zM1911 1092h91v91h-91zM0 1183h91v91H0zM91 1183h91v91H91zM182 1183h91v91h-91zM273 1183h91v91h-91zM364 1183h91v91h-91zM455 1183h91v91h-91zM546 1183h91v91h-91zM637 1183h91v91h-91zM728 1183h91v91h-91zM819 1183h91v91h-91zM910 1183h91v91h-91zM1001 1183h91v91h-91zM1092 1183h91v91h-91zM1183 1183h91v91h-91zM1274 1183h91v91h-91zM1365 1183h91v91h-91zM1456 1183h91v91h-91zM1547 1183h91v91h-91zM1638 1183h91v91h-91zM1729 1183h91v91h-91zM1820 1183h91v91h-91zM1911 1183h91v91h-91zM0 1274h91v91H0zM91 1274h91v91H91zM182 1274h91v91h-91zM273 1274h91v91h-91zM364 1274h91v91h-91zM455 1274h91v91h-91zM546 1274h91v91h-91zM637 1274h91v91h-91zM728 1274h91v91h-91zM819 1274h91v91h-91zM910 1274h91v91h-91zM1001 1274h91v91h-91zM1092 1274h91v91h-91zM1183 1274h91v91h-91zM1274 1274h91v91h-91zM1365 1274h91v91h-91zM1456 1274h91v91h-91zM1547 1274h91v91h-91zM1638 1274h91v91h-91zM1729 1274h91v91h-91zM1820 1274h91v91h-91zM1911 1274h91v91h-91zM0 1365h91v91H0zM91 1365h91v91H91zM182 1365h91v91h-91zM273 1365h91v91h-91zM364 1365h91v91h-91zM455 1365h91v91h-91zM546 1365h91v91h-91zM637 1365h91v91h-91zM728 1365h91v91h-91zM819 1365h91v91h-91zM910 1365h91v91h-91zM1001 1365h91v91h-91zM1092 1365h91v91h-91zM1183 1365h91v91h-91zM1274 1365h91v91h-91zM1365 1365h91v91h-91zM1456 1365h91v91h-91zM1547 1365h91v91h-91zM1638 1365h91v91h-91zM1729 1365h91v91h-91zM1820 1365h91v91h-91zM1911 1365h91v91h-91z%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CradialGradient id=%22a%22%3E%3Cstop offset=%220%22 stop-color=%22%23fff%22%2F%3E%3Cstop offset=%221%22 stop-color=%22%23fff%22 stop-opacity=%220%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
+}
+
+.cinematic-container {
+  position: relative;
+}
+
+.cinematic-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Légère teinte noire */
+  z-index: 10;
+}
+
+.cinematic-image {
+  filter: brightness(80%); /* Assombrir légèrement l'image */
+}
+
+.hide-scrollbar {
+  /* Pour les navigateurs basés sur Webkit (Chrome, Safari, etc.) */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Gallery */
+.content-title-1,
+.content-title-2 {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Bonny-Variable";
+}
+
+.title-1,
+.title-2 {
+  font-weight: 600;
+  font-size: 72px;
+  font-family: "Bonny-Variable";
+}

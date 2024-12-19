@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "niconneregular";
+
+  src: url("../fonts/Niconne-Regular-webfont.woff") format("woff"),
+    url("../fonts/Niconne-Regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "royalwedding";
+
+  src: url("../fonts/RoyalWedding-Regular.otf") format("otf"),
+    url("../fonts/RoyalWedding-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "brolimo";
+
+  src: url("../fonts/BrolimoRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "casta";
+
+  src: url("../fonts/Casta-Thin.otf") format("otf"),
+    url("../fonts/Casta-ThinSlanted.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
