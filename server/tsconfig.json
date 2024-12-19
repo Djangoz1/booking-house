@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Version de JavaScript à laquelle compiler
+    "module": "commonjs", // Module code generation
+    "strict": true, // Activer toutes les vérifications strictes
+    "esModuleInterop": true, // Activer l'interopérabilité des modules ES
+    "skipLibCheck": true, // Ne pas vérifier les fichiers de déclaration
+    "forceConsistentCasingInFileNames": true // Forcer la casse cohérente dans les noms de fichiers
+  },
+  "include": ["src"], // Inclure le répertoire source
+  "exclude": ["node_modules"] // Exclure le répertoire node_modules
+}
